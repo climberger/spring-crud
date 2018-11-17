@@ -1,0 +1,18 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+  <changeSet author="helloWorld (generated)" id="1525442605294-2">
+
+    <createTable tableName="resources">
+      <column autoIncrement="true" name="id" type="BIGSERIAL">
+        <constraints primaryKey="true" primaryKeyName="resource_pk"/>
+      </column>
+      <column name="name" type="VARCHAR(255)"/>
+      <column name="type" type="VARCHAR(255)"/>
+    </createTable>
+
+  </changeSet>
+
+</databaseChangeLog>
